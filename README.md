@@ -55,3 +55,46 @@ const zipCode = user.address?.zipCode; // Returns undefined instead of throwing 
 - To sort the songs in alphabetical order by title, you will need to pass in a compare callback function into your sort() method.
 - The sort() method accepts a compare callback function that defines the sort order.
 - Strings are compared lexicographically which means they are compared character by character.
+- Another use case for the callback function is to randomize an array.
+- One way to randomize an array of items would be to subtract 0.5 from Math.random() which produces random values that are either positive or negative.
+- This makes the comparison result a mix of positive and negative values, leading to a random ordering of elements.
+
+- The find() method retrieves the first element within an array that fulfills the conditions specified in the provided callback function. If no element satisfies the condition, the method returns undefined
+
+const numbers = [10, 20, 30, 40, 50];
+
+// Find the first number greater than 25
+const foundNumber = numbers.find((number) => number > 25);
+console.log(foundNumber); // Output: 30
+
+- Before playing the song, you need to make sure it starts from the beginning. This can be achieved by the use of the currentTime property of the audio object.
+
+- (property and method for class and element, confusion) Next, use the classList property and the add() method to add the "playing" class to the playButton element. This will look for the class "playing" in the CSS file and add it to the playButton element.
+- To finally play the song, use the play() method on the audio variable. play() is a method from the web audio API for playing an mp3 file.
+
+- The indexOf() array method returns the first index at which a given element can be found in the array, or -1 if the element is not present.
+
+- The forEach method is used to loop through an array and perform a function on each element of the array. For example, suppose you have an array of numbers and you want to log each number to the console.
+
+- textContent sets the text of a node and allows you to set or retrieve the text content of an HTML element.
+
+<div id="example">This is some text content</div>
+
+const element = document.getElementById('example');
+console.log(element.textContent); // Output: This is some text content
+
+- createElement() is a DOM method you can use to dynamically create an element using JavaScript. To use createElement(), you call it, then pass in the tag name as a string:
+// syntax
+document.createElement(tagName)
+
+// example
+document.createElement('div')
+
+const divElement = document.createElement('div')
+
+- After created the button, you need to assign it a text. 
+- To do this, you need to use the createTextNode() method of DOM.
+- The createTextNode() method is used to create a text node.
+document.createTextNode("your text")
+- Assigning it to a variable
+const myText = document.createTextNode("your text")
